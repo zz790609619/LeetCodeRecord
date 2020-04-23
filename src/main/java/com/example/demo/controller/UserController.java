@@ -1,27 +1,31 @@
 package com.example.demo.controller;
 
-import com.example.demo.service.UserService;
+import com.example.demo.entity.SubmitUserPayOrderRequest;
+import com.example.demo.service.UserPayOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class UserController{
     @Autowired
-    private UserService userService;
+    private UserPayOrderService userPayOrderService;
 
-    @RequestMapping(value = "/registerUser",method = RequestMethod.POST)
-    @ResponseBody
-    public int insert()throws InterruptedException {
-        Thread.sleep(10000L);
-         return  0;
+    /**
+     * 根据订单号获取商户id
+     * @param userOrderId 订单id
+     * @return
+     */
+    @PostMapping("/userOrderMerchantId")
+    public String userOrderMerchantId(@RequestParam("userOrderId") String userOrderId){
+        return userPayOrderService.userOrderMerchantId(userOrderId);
     }
-//    @RequestMapping(value = "/updateUserInfo",method = RequestMethod.POST)
-//    @ResponseBody
-//    public int updateUserInfo(@ModelAttribute User user){
-//        return userService.updateUserInfo(user);
-//
-//    }
+    @PostMapping("/submit")
+
+    public String submit(@RequestBody SubmitUserPayOrderRequest userPayOrderRequest){
+        return userPayOrderService.submit(userPayOrderRequest);
+
+    }
 }

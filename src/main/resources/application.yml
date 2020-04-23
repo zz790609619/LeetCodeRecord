@@ -1,32 +1,39 @@
 server:
-    port: 8091
+    port: 8090
 spring:
     datasource:
         type: com.alibaba.druid.pool.DruidDataSource
         driverClassName: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://192.168.0.250:3306/advert-db?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull
+        url: jdbc:mysql://127.0.0.1:3306/game?useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
         username: root
-        password: wOHEnYIH
-
+        password: 123456
         initialSize: 5
         minIdle: 1
         maxActive: 50
         maxWait: 60000
         timeBetweenEvictionRunsMillis: 60000
         minEvictableIdleTimeMillis: 300000
-    jpa:
-        database: mysql
-        show-sql: true
-        nativQuery: true
-    hibernate:
-        ddl-auto: none
-    activemq:
-        broker-url: tcp://localhost:61616
-#    jwt:
-#        header: authorization
-#        secret: mySecret
-    # 24 * 60 * 60 Token��Ч��һ��
-#    expiration: 86400
-#    route:
-#        authentication:
-#        path: /login, /register
+        filters: stat,wall
+    user:
+        datasource:
+            ds0:
+                type: com.alibaba.druid.pool.DruidDataSource
+                driverClassName: com.mysql.cj.jdbc.Driver
+                url: jdbc:mysql://127.0.0.1:3306/user_0?useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+                username: root
+                password: 123456
+            ds1:
+                type: com.alibaba.druid.pool.DruidDataSource
+                driverClassName: com.mysql.cj.jdbc.Driver
+                url: jdbc:mysql://127.0.0.1:3306/user_1?useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+                username: root
+                password: 123456
+            ds2:
+                type: com.alibaba.druid.pool.DruidDataSource
+                driverClassName: com.mysql.cj.jdbc.Driver
+                url: jdbc:mysql://127.0.0.1:3306/user_2?useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+                username: root
+                password: 123456
+
+mybatis:
+    mapper-locations: classpath:mapper/*.xml

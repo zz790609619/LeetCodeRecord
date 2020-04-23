@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.data.mapper.user.UserPayOrderMapper">
+    <resultMap id="BaseResultMap" type="com.example.demo.entity.UserPayOrder">
+        <id column="id" jdbcType="VARCHAR" property="id" />
+        <result column="merchant_id" jdbcType="BIGINT" property="merchantId" />
+        <result column="user_pay_id" jdbcType="BIGINT" property="userPayId" />
+        <result column="amount_of_consumption" jdbcType="DECIMAL" property="amountOfConsumption" />
+        <result column="pay_able_amount" jdbcType="DECIMAL" property="payAbleAmount" />
+        <result column="merchant_receive_amount" jdbcType="DECIMAL" property="merchantReceiveAmount" />
+        <result column="pay_type" jdbcType="INTEGER" property="payType" />
+        <result column="pay_time" jdbcType="TIMESTAMP" property="payTime" />
+        <result column="user_id" jdbcType="BIGINT" property="userId" />
+        <result column="discount_amount" jdbcType="DECIMAL" property="discountAmount" />
+        <result column="free_amount" jdbcType="DECIMAL" property="freeAmount" />
+        <result column="status" jdbcType="INTEGER" property="status" />
+        <result column="channel_id" jdbcType="INTEGER" property="channelId" />
+        <result column="enjoy_king_amount" jdbcType="DECIMAL" property="enjoyKingAmount" />
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+        <result column="enjoy_issue_king_amount" jdbcType="DECIMAL" property="enjoyIssueKingAmount" />
+        <result column="enjoy_receive_king_amount" jdbcType="DECIMAL" property="enjoyReceiveKingAmount" />
+
+    </resultMap>
+
+   <sql id="Base_Column_List">
+        id, merchant_id, user_pay_id, amount_of_consumption, pay_able_amount, merchant_receive_amount, pay_type, pay_time, user_id, discount_amount, free_amount, status, channel_id, enjoy_king_amount, create_time, update_time, enjoy_issue_king_amount, enjoy_receive_king_amount
+
+    </sql>
+    
+    <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select 
+        <include refid="Base_Column_List" />
+        from user_pay_order
+        where id = #{id,jdbcType=VARCHAR}
+    </select>
+    <select id="selectByEntity" parameterType="com.example.demo.entity.UserPayOrder" resultMap="BaseResultMap">
+        select 
+        <include refid="Base_Column_List" />
+        from user_pay_order
+        where 1 = 1
+        <if test="id != null" >
+            and id = #{id,jdbcType=VARCHAR}
+        </if>
+        <if test="merchantId != null" >
+            and merchant_id = #{merchantId,jdbcType=BIGINT}
+        </if>
+        <if test="userPayId != null" >
+            and user_pay_id = #{userPayId,jdbcType=BIGINT}
+        </if>
+        <if test="amountOfConsumption != null" >
+            and amount_of_consumption = #{amountOfConsumption,jdbcType=DECIMAL}
+        </if>
+        <if test="payAbleAmount != null" >
+            and pay_able_amount = #{payAbleAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="merchantReceiveAmount != null" >
+            and merchant_receive_amount = #{merchantReceiveAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="payType != null" >
+            and pay_type = #{payType,jdbcType=INTEGER}
+        </if>
+        <if test="payTime != null" >
+            and pay_time = #{payTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="userId != null" >
+            and user_id = #{userId,jdbcType=BIGINT}
+        </if>
+        <if test="discountAmount != null" >
+            and discount_amount = #{discountAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="freeAmount != null" >
+            and free_amount = #{freeAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="status != null" >
+            and status = #{status,jdbcType=INTEGER}
+        </if>
+        <if test="channelId != null" >
+            and channel_id = #{channelId,jdbcType=INTEGER}
+        </if>
+        <if test="enjoyKingAmount != null" >
+            and enjoy_king_amount = #{enjoyKingAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="createTime != null" >
+            and create_time = #{createTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="updateTime != null" >
+            and update_time = #{updateTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="enjoyIssueKingAmount != null" >
+            and enjoy_issue_king_amount = #{enjoyIssueKingAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="enjoyReceiveKingAmount != null" >
+            and enjoy_receive_king_amount = #{enjoyReceiveKingAmount,jdbcType=DECIMAL}
+        </if>
+
+        limit 1
+    </select>
+    
+    <select id="selectByPayTime" parameterType="com.example.demo.entity.UserPayOrder" resultMap="BaseResultMap">
+        select 
+        <include refid="Base_Column_List" />
+        from user_pay_order
+        where user_pay_id = #{userPayId,jdbcType=BIGINT}
+            and pay_type = #{payType,jdbcType=INTEGER}
+            and status = #{status,jdbcType=INTEGER}
+            order by pay_time asc
+        limit 1
+    </select>
+    
+    <select id="selectByEntityList" parameterType="com.example.demo.entity.UserPayOrder" resultMap="BaseResultMap">
+        select 
+        <include refid="Base_Column_List" />
+        from user_pay_order
+        where 1 = 1
+              <if test="id != null" >
+            and id = #{id,jdbcType=VARCHAR}
+        </if>
+        <if test="merchantId != null" >
+            and merchant_id = #{merchantId,jdbcType=BIGINT}
+        </if>
+        <if test="userPayId != null" >
+            and user_pay_id = #{userPayId,jdbcType=BIGINT}
+        </if>
+        <if test="amountOfConsumption != null" >
+            and amount_of_consumption = #{amountOfConsumption,jdbcType=DECIMAL}
+        </if>
+        <if test="payAbleAmount != null" >
+            and pay_able_amount = #{payAbleAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="merchantReceiveAmount != null" >
+            and merchant_receive_amount = #{merchantReceiveAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="payType != null" >
+            and pay_type = #{payType,jdbcType=INTEGER}
+        </if>
+        <if test="payTime != null" >
+            and pay_time = #{payTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="userId != null" >
+            and user_id = #{userId,jdbcType=BIGINT}
+        </if>
+        <if test="discountAmount != null" >
+            and discount_amount = #{discountAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="freeAmount != null" >
+            and free_amount = #{freeAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="status != null" >
+            and status = #{status,jdbcType=INTEGER}
+        </if>
+        <if test="channelId != null" >
+            and channel_id = #{channelId,jdbcType=INTEGER}
+        </if>
+        <if test="enjoyKingAmount != null" >
+            and enjoy_king_amount = #{enjoyKingAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="createTime != null" >
+            and create_time = #{createTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="updateTime != null" >
+            and update_time = #{updateTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="enjoyIssueKingAmount != null" >
+            and enjoy_issue_king_amount = #{enjoyIssueKingAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="enjoyReceiveKingAmount != null" >
+            and enjoy_receive_king_amount = #{enjoyReceiveKingAmount,jdbcType=DECIMAL}
+        </if>
+
+    </select>
+    
+    <select id="selectById" parameterType="com.example.demo.entity.UserPayOrder" resultType="java.lang.String">
+        select 
+       id
+        from user_pay_order
+        where 1 = 1
+                <if test="id != null" >
+            and id = #{id,jdbcType=VARCHAR}
+        </if>
+        <if test="merchantId != null" >
+            and merchant_id = #{merchantId,jdbcType=BIGINT}
+        </if>
+        <if test="userPayId != null" >
+            and user_pay_id = #{userPayId,jdbcType=BIGINT}
+        </if>
+        <if test="amountOfConsumption != null" >
+            and amount_of_consumption = #{amountOfConsumption,jdbcType=DECIMAL}
+        </if>
+        <if test="payAbleAmount != null" >
+            and pay_able_amount = #{payAbleAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="merchantReceiveAmount != null" >
+            and merchant_receive_amount = #{merchantReceiveAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="payType != null" >
+            and pay_type = #{payType,jdbcType=INTEGER}
+        </if>
+        <if test="payTime != null" >
+            and pay_time = #{payTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="userId != null" >
+            and user_id = #{userId,jdbcType=BIGINT}
+        </if>
+        <if test="discountAmount != null" >
+            and discount_amount = #{discountAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="freeAmount != null" >
+            and free_amount = #{freeAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="status != null" >
+            and status = #{status,jdbcType=INTEGER}
+        </if>
+        <if test="channelId != null" >
+            and channel_id = #{channelId,jdbcType=INTEGER}
+        </if>
+        <if test="enjoyKingAmount != null" >
+            and enjoy_king_amount = #{enjoyKingAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="createTime != null" >
+            and create_time = #{createTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="updateTime != null" >
+            and update_time = #{updateTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="enjoyIssueKingAmount != null" >
+            and enjoy_issue_king_amount = #{enjoyIssueKingAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="enjoyReceiveKingAmount != null" >
+            and enjoy_receive_king_amount = #{enjoyReceiveKingAmount,jdbcType=DECIMAL}
+        </if>
+
+         limit 1
+    </select>
+    
+    <select id="selectByIds" parameterType="com.example.demo.entity.UserPayOrder" resultType="java.lang.String">
+        select 
+        id
+        from user_pay_order
+        where 1 = 1
+                <if test="id != null" >
+            and id = #{id,jdbcType=VARCHAR}
+        </if>
+        <if test="merchantId != null" >
+            and merchant_id = #{merchantId,jdbcType=BIGINT}
+        </if>
+        <if test="userPayId != null" >
+            and user_pay_id = #{userPayId,jdbcType=BIGINT}
+        </if>
+        <if test="amountOfConsumption != null" >
+            and amount_of_consumption = #{amountOfConsumption,jdbcType=DECIMAL}
+        </if>
+        <if test="payAbleAmount != null" >
+            and pay_able_amount = #{payAbleAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="merchantReceiveAmount != null" >
+            and merchant_receive_amount = #{merchantReceiveAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="payType != null" >
+            and pay_type = #{payType,jdbcType=INTEGER}
+        </if>
+        <if test="payTime != null" >
+            and pay_time = #{payTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="userId != null" >
+            and user_id = #{userId,jdbcType=BIGINT}
+        </if>
+        <if test="discountAmount != null" >
+            and discount_amount = #{discountAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="freeAmount != null" >
+            and free_amount = #{freeAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="status != null" >
+            and status = #{status,jdbcType=INTEGER}
+        </if>
+        <if test="channelId != null" >
+            and channel_id = #{channelId,jdbcType=INTEGER}
+        </if>
+        <if test="enjoyKingAmount != null" >
+            and enjoy_king_amount = #{enjoyKingAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="createTime != null" >
+            and create_time = #{createTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="updateTime != null" >
+            and update_time = #{updateTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="enjoyIssueKingAmount != null" >
+            and enjoy_issue_king_amount = #{enjoyIssueKingAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="enjoyReceiveKingAmount != null" >
+            and enjoy_receive_king_amount = #{enjoyReceiveKingAmount,jdbcType=DECIMAL}
+        </if>
+
+    </select>
+    
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+        delete from user_pay_order where id = #{id,jdbcType=VARCHAR}
+    </delete>
+    <insert id="insert" parameterType="com.example.demo.entity.UserPayOrder" >
+        insert into user_pay_order (
+            id, merchant_id, user_pay_id, amount_of_consumption, pay_able_amount, merchant_receive_amount, pay_type, pay_time, user_id, discount_amount, free_amount, status, channel_id, enjoy_king_amount, create_time, update_time, enjoy_issue_king_amount, enjoy_receive_king_amount
+
+        )
+        values (
+            #{id,jdbcType=VARCHAR}, #{merchantId,jdbcType=BIGINT}, #{userPayId,jdbcType=BIGINT}, #{amountOfConsumption,jdbcType=DECIMAL}, #{payAbleAmount,jdbcType=DECIMAL}, #{merchantReceiveAmount,jdbcType=DECIMAL}, #{payType,jdbcType=INTEGER}, #{payTime,jdbcType=TIMESTAMP}, #{userId,jdbcType=BIGINT}, #{discountAmount,jdbcType=DECIMAL}, #{freeAmount,jdbcType=DECIMAL}, #{status,jdbcType=INTEGER}, #{channelId,jdbcType=INTEGER}, #{enjoyKingAmount,jdbcType=DECIMAL}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}, #{enjoyIssueKingAmount,jdbcType=DECIMAL}, #{enjoyReceiveKingAmount,jdbcType=DECIMAL}
+        )
+    </insert>
+    <insert id="insertSelective" parameterType="com.example.demo.entity.UserPayOrder" >
+        insert into user_pay_order
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            id,
+        <if test="merchantId != null">
+            merchant_id,
+        </if>
+        <if test="userPayId != null">
+            user_pay_id,
+        </if>
+        <if test="amountOfConsumption != null">
+            amount_of_consumption,
+        </if>
+        <if test="payAbleAmount != null">
+            pay_able_amount,
+        </if>
+        <if test="merchantReceiveAmount != null">
+            merchant_receive_amount,
+        </if>
+        <if test="payType != null">
+            pay_type,
+        </if>
+        <if test="payTime != null">
+            pay_time,
+        </if>
+        <if test="userId != null">
+            user_id,
+        </if>
+        <if test="discountAmount != null">
+            discount_amount,
+        </if>
+        <if test="freeAmount != null">
+            free_amount,
+        </if>
+        <if test="status != null">
+            status,
+        </if>
+        <if test="channelId != null">
+            channel_id,
+        </if>
+        <if test="enjoyKingAmount != null">
+            enjoy_king_amount,
+        </if>
+        <if test="createTime != null">
+            create_time,
+        </if>
+        <if test="updateTime != null">
+            update_time,
+        </if>
+        <if test="enjoyIssueKingAmount != null">
+            enjoy_issue_king_amount,
+        </if>
+        <if test="enjoyReceiveKingAmount != null">
+            enjoy_receive_king_amount,
+        </if>
+        <if test="scanType != null">
+            scan_type,
+        </if>
+
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+#{id,jdbcType=VARCHAR},
+        <if test="merchantId != null">
+            #{merchantId,jdbcType=BIGINT},
+        </if>
+        <if test="userPayId != null">
+            #{userPayId,jdbcType=BIGINT},
+        </if>
+        <if test="amountOfConsumption != null">
+            #{amountOfConsumption,jdbcType=DECIMAL},
+        </if>
+        <if test="payAbleAmount != null">
+            #{payAbleAmount,jdbcType=DECIMAL},
+        </if>
+        <if test="merchantReceiveAmount != null">
+            #{merchantReceiveAmount,jdbcType=DECIMAL},
+        </if>
+        <if test="payType != null">
+            #{payType,jdbcType=INTEGER},
+        </if>
+        <if test="payTime != null">
+            #{payTime,jdbcType=TIMESTAMP},
+        </if>
+        <if test="userId != null">
+            #{userId,jdbcType=BIGINT},
+        </if>
+        <if test="discountAmount != null">
+            #{discountAmount,jdbcType=DECIMAL},
+        </if>
+        <if test="freeAmount != null">
+            #{freeAmount,jdbcType=DECIMAL},
+        </if>
+        <if test="status != null">
+            #{status,jdbcType=INTEGER},
+        </if>
+        <if test="channelId != null">
+            #{channelId,jdbcType=INTEGER},
+        </if>
+        <if test="enjoyKingAmount != null">
+            #{enjoyKingAmount,jdbcType=DECIMAL},
+        </if>
+        <if test="createTime != null">
+            #{createTime,jdbcType=TIMESTAMP},
+        </if>
+        <if test="updateTime != null">
+            #{updateTime,jdbcType=TIMESTAMP},
+        </if>
+        <if test="enjoyIssueKingAmount != null">
+            #{enjoyIssueKingAmount,jdbcType=DECIMAL},
+        </if>
+        <if test="enjoyReceiveKingAmount != null">
+            #{enjoyReceiveKingAmount,jdbcType=DECIMAL},
+        </if>
+        <if test="scanType != null">
+            #{scanType,jdbcType=INTEGER},
+        </if>
+
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKey" parameterType="com.example.demo.entity.UserPayOrder">
+        update user_pay_order
+        <set>
+        <if test="merchantId != null">
+            merchant_id = #{merchantId,jdbcType=BIGINT},
+        </if>
+        <if test="userPayId != null">
+            user_pay_id = #{userPayId,jdbcType=BIGINT},
+        </if>
+        <if test="amountOfConsumption != null">
+            amount_of_consumption = #{amountOfConsumption,jdbcType=DECIMAL},
+        </if>
+        <if test="payAbleAmount != null">
+            pay_able_amount = #{payAbleAmount,jdbcType=DECIMAL},
+        </if>
+        <if test="merchantReceiveAmount != null">
+            merchant_receive_amount = #{merchantReceiveAmount,jdbcType=DECIMAL},
+        </if>
+        <if test="payType != null">
+            pay_type = #{payType,jdbcType=INTEGER},
+        </if>
+        <if test="payTime != null">
+            pay_time = #{payTime,jdbcType=TIMESTAMP},
+        </if>
+        <if test="userId != null">
+            user_id = #{userId,jdbcType=BIGINT},
+        </if>
+        <if test="discountAmount != null">
+            discount_amount = #{discountAmount,jdbcType=DECIMAL},
+        </if>
+        <if test="freeAmount != null">
+            free_amount = #{freeAmount,jdbcType=DECIMAL},
+        </if>
+        <if test="status != null">
+            status = #{status,jdbcType=INTEGER},
+        </if>
+        <if test="channelId != null">
+            channel_id = #{channelId,jdbcType=INTEGER},
+        </if>
+        <if test="enjoyKingAmount != null">
+            enjoy_king_amount = #{enjoyKingAmount,jdbcType=DECIMAL},
+        </if>
+        <if test="createTime != null">
+            create_time = #{createTime,jdbcType=TIMESTAMP},
+        </if>
+        <if test="updateTime != null">
+            update_time = #{updateTime,jdbcType=TIMESTAMP},
+        </if>
+        <if test="enjoyIssueKingAmount != null">
+            enjoy_issue_king_amount = #{enjoyIssueKingAmount,jdbcType=DECIMAL},
+        </if>
+        <if test="enjoyReceiveKingAmount != null">
+            enjoy_receive_king_amount = #{enjoyReceiveKingAmount,jdbcType=DECIMAL},
+        </if>
+
+        </set>
+        where id = #{id,jdbcType=VARCHAR}
+    </update>
+    
+    <insert id="insertBatch" parameterType="java.util.List" >  
+        insert into user_pay_order (
+                        id, merchant_id, user_pay_id, amount_of_consumption, pay_able_amount, merchant_receive_amount, pay_type, pay_time, user_id, discount_amount, free_amount, status, channel_id, enjoy_king_amount, create_time, update_time, enjoy_issue_king_amount, enjoy_receive_king_amount
+
+        )
+        values 
+        <foreach collection="list" index="index" item="item" separator=",">  
+        (
+                 #{item.id,jdbcType=VARCHAR}, 
+        #{item.merchantId,jdbcType=BIGINT}, 
+        #{item.userPayId,jdbcType=BIGINT}, 
+        #{item.amountOfConsumption,jdbcType=DECIMAL}, 
+        #{item.payAbleAmount,jdbcType=DECIMAL}, 
+        #{item.merchantReceiveAmount,jdbcType=DECIMAL}, 
+        #{item.payType,jdbcType=INTEGER}, 
+        #{item.payTime,jdbcType=TIMESTAMP}, 
+        #{item.userId,jdbcType=BIGINT}, 
+        #{item.discountAmount,jdbcType=DECIMAL}, 
+        #{item.freeAmount,jdbcType=DECIMAL}, 
+        #{item.status,jdbcType=INTEGER}, 
+        #{item.channelId,jdbcType=INTEGER}, 
+        #{item.enjoyKingAmount,jdbcType=DECIMAL}, 
+        #{item.createTime,jdbcType=TIMESTAMP}, 
+        #{item.updateTime,jdbcType=TIMESTAMP}, 
+        #{item.enjoyIssueKingAmount,jdbcType=DECIMAL}, 
+        #{item.enjoyReceiveKingAmount,jdbcType=DECIMAL}
+
+        )
+        </foreach>
+      </insert>
+    <update id="updateBatch" parameterType="java.util.List">  
+        <foreach close=")" collection="list" index="index" item="item" open="(" separator=",">     
+           update user_pay_order
+        set 
+               merchant_id = #{item.merchantId,jdbcType=BIGINT}, 
+        user_pay_id = #{item.userPayId,jdbcType=BIGINT}, 
+        amount_of_consumption = #{item.amountOfConsumption,jdbcType=DECIMAL}, 
+        pay_able_amount = #{item.payAbleAmount,jdbcType=DECIMAL}, 
+        merchant_receive_amount = #{item.merchantReceiveAmount,jdbcType=DECIMAL}, 
+        pay_type = #{item.payType,jdbcType=INTEGER}, 
+        pay_time = #{item.payTime,jdbcType=TIMESTAMP}, 
+        user_id = #{item.userId,jdbcType=BIGINT}, 
+        discount_amount = #{item.discountAmount,jdbcType=DECIMAL}, 
+        free_amount = #{item.freeAmount,jdbcType=DECIMAL}, 
+        status = #{item.status,jdbcType=INTEGER}, 
+        channel_id = #{item.channelId,jdbcType=INTEGER}, 
+        enjoy_king_amount = #{item.enjoyKingAmount,jdbcType=DECIMAL}, 
+        create_time = #{item.createTime,jdbcType=TIMESTAMP}, 
+        update_time = #{item.updateTime,jdbcType=TIMESTAMP}, 
+        enjoy_issue_king_amount = #{item.enjoyIssueKingAmount,jdbcType=DECIMAL}, 
+        enjoy_receive_king_amount = #{item.enjoyReceiveKingAmount,jdbcType=DECIMAL}
+
+        where id = #{id,jdbcType=VARCHAR}
+        </foreach>
+    </update>
+    <delete id="deleteBatch" parameterType="java.util.List"> 
+        delete from user_pay_order where id in
+        <foreach close=")" collection="list" index="index" item="item" open="(" separator=",">  
+            #{item}  
+        </foreach> 
+    </delete>
+ 
+    <delete id="deleteByEntity" parameterType="com.example.demo.entity.UserPayOrder">
+        delete from user_pay_order where  1 = 1
+                <if test="id != null" >
+            and id = #{id,jdbcType=VARCHAR}
+        </if>
+        <if test="merchantId != null" >
+            and merchant_id = #{merchantId,jdbcType=BIGINT}
+        </if>
+        <if test="userPayId != null" >
+            and user_pay_id = #{userPayId,jdbcType=BIGINT}
+        </if>
+        <if test="amountOfConsumption != null" >
+            and amount_of_consumption = #{amountOfConsumption,jdbcType=DECIMAL}
+        </if>
+        <if test="payAbleAmount != null" >
+            and pay_able_amount = #{payAbleAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="merchantReceiveAmount != null" >
+            and merchant_receive_amount = #{merchantReceiveAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="payType != null" >
+            and pay_type = #{payType,jdbcType=INTEGER}
+        </if>
+        <if test="payTime != null" >
+            and pay_time = #{payTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="userId != null" >
+            and user_id = #{userId,jdbcType=BIGINT}
+        </if>
+        <if test="discountAmount != null" >
+            and discount_amount = #{discountAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="freeAmount != null" >
+            and free_amount = #{freeAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="status != null" >
+            and status = #{status,jdbcType=INTEGER}
+        </if>
+        <if test="channelId != null" >
+            and channel_id = #{channelId,jdbcType=INTEGER}
+        </if>
+        <if test="enjoyKingAmount != null" >
+            and enjoy_king_amount = #{enjoyKingAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="createTime != null" >
+            and create_time = #{createTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="updateTime != null" >
+            and update_time = #{updateTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="enjoyIssueKingAmount != null" >
+            and enjoy_issue_king_amount = #{enjoyIssueKingAmount,jdbcType=DECIMAL}
+        </if>
+        <if test="enjoyReceiveKingAmount != null" >
+            and enjoy_receive_king_amount = #{enjoyReceiveKingAmount,jdbcType=DECIMAL}
+        </if>
+
+    </delete>
+
+   <select id="selectEntityListByPrimaryKeys" parameterType="java.util.List" resultMap="BaseResultMap">
+        SELECT  <include refid="Base_Column_List" />
+        FROM user_pay_order WHERE  id in
+        <foreach close=")" collection="list" index="index" item="item" open="(" separator=",">
+            #{item}
+        </foreach>
+    </select>
+
+    <update id="updateByIdAndPayUserId" parameterType="com.example.demo.entity.UserPayOrder">
+        update user_pay_order
+        <set>
+            <if test="merchantId != null">
+                merchant_id = #{merchantId,jdbcType=BIGINT},
+            </if>
+            <if test="amountOfConsumption != null">
+                amount_of_consumption = #{amountOfConsumption,jdbcType=DECIMAL},
+            </if>
+            <if test="payAbleAmount != null">
+                pay_able_amount = #{payAbleAmount,jdbcType=DECIMAL},
+            </if>
+            <if test="merchantReceiveAmount != null">
+                merchant_receive_amount = #{merchantReceiveAmount,jdbcType=DECIMAL},
+            </if>
+            <if test="payType != null">
+                pay_type = #{payType,jdbcType=INTEGER},
+            </if>
+            <if test="payTime != null">
+                pay_time = #{payTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="userId != null">
+                user_id = #{userId,jdbcType=BIGINT},
+            </if>
+            <if test="discountAmount != null">
+                discount_amount = #{discountAmount,jdbcType=DECIMAL},
+            </if>
+            <if test="freeAmount != null">
+                free_amount = #{freeAmount,jdbcType=DECIMAL},
+            </if>
+            <if test="status != null">
+                status = #{status,jdbcType=INTEGER},
+            </if>
+            <if test="channelId != null">
+                channel_id = #{channelId,jdbcType=INTEGER},
+            </if>
+            <if test="enjoyKingAmount != null">
+                enjoy_king_amount = #{enjoyKingAmount,jdbcType=DECIMAL},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="enjoyIssueKingAmount != null">
+                enjoy_issue_king_amount = #{enjoyIssueKingAmount,jdbcType=DECIMAL},
+            </if>
+            <if test="enjoyReceiveKingAmount != null">
+                enjoy_receive_king_amount = #{enjoyReceiveKingAmount,jdbcType=DECIMAL},
+            </if>
+
+        </set>
+        where id = #{id,jdbcType=VARCHAR}
+        and user_pay_id = #{userPayId,jdbcType=BIGINT}
+    </update>
+
+    <select id="queryStatus" resultType="java.lang.Integer">
+        select status
+        from user_pay_order
+        where id = #{id,jdbcType=VARCHAR}
+        and user_pay_id = #{userPayId,jdbcType=BIGINT}
+    </select>
+
+</mapper>
