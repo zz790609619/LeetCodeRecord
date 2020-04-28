@@ -37,3 +37,14 @@ spring:
 
 mybatis:
     mapper-locations: classpath:mapper/*.xml
+
+aliyun:
+    mq:
+        namesrv_addr: http://cccccccccccccccccccccccccccc.mq-internet-access.mq-internet.aliyuncs.com:80
+        groupId: GID_TCP_001
+        topic: ww_test_topic
+        tag: ww_test_tag
+        suspend_time_millis: 100
+        max_reconsume_times: 20
+        access_key: cccccccccccccccccccccccccc
+        secret_key: cccccccccccccccccccccccccc

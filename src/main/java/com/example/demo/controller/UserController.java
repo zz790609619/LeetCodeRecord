@@ -1,6 +1,9 @@
 package com.example.demo.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.example.demo.entity.SubmitUserPayOrderRequest;
+import com.example.demo.entity.UserPayOrder;
+import com.example.demo.mq.AliMqComponent;
 import com.example.demo.service.UserPayOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,6 +16,8 @@ public class UserController{
     @Autowired
     private UserPayOrderService userPayOrderService;
 
+    @Autowired
+    private AliMqComponent aliMqComponent;
     /**
      * 根据订单号获取商户id
      * @param userOrderId 订单id
@@ -20,7 +25,9 @@ public class UserController{
      */
     @PostMapping("/userOrderMerchantId")
     public String userOrderMerchantId(@RequestParam("userOrderId") String userOrderId){
-        return userPayOrderService.userOrderMerchantId(userOrderId);
+        UserPayOrder vo=userPayOrderService.userOrderMerchantId(userOrderId);
+        String messageId = aliMqComponent.sendCommonMessage("ww_test_topic","ww_test_tag","ssss",JSON.toJSONBytes(vo));
+        return JSON.toJSONString(vo);
     }
     @PostMapping("/submit")
 

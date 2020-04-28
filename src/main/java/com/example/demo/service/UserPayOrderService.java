@@ -1,6 +1,5 @@
 package com.example.demo.service;
 
-import com.alibaba.fastjson.JSON;
 import com.example.demo.data.mapper.user.UserPayOrderMapper;
 import com.example.demo.entity.SubmitUserPayOrderRequest;
 import com.example.demo.entity.UserPayOrder;
@@ -28,10 +27,10 @@ public class UserPayOrderService {
      * @param userOrderId
      * @return
      */
-    public String userOrderMerchantId(String userOrderId) {
+    public UserPayOrder userOrderMerchantId(String userOrderId) {
         UserPayOrder upo = userPayOrderDao.selectByEntity(new UserPayOrder()
             .setId(userOrderId));
-        return JSON.toJSONString(upo);
+        return upo;
     }
 
 
