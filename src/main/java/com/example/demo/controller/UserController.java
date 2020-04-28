@@ -30,9 +30,9 @@ public class UserController{
         return JSON.toJSONString(vo);
     }
     @PostMapping("/submit")
-
     public String submit(@RequestBody SubmitUserPayOrderRequest userPayOrderRequest){
         return userPayOrderService.submit(userPayOrderRequest);
 
     }
+
 }
