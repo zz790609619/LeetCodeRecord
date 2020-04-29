@@ -31,6 +31,7 @@ public class UserNodeController {
         return JSON.toJSONString(dto);
     }
     /**
+     *
      * 空指针异常报错
      * 访问路径：http://127.0.0.1:8090/test/nullPointException
      * 返回结果：{"errorCode": 1002,"message": "NullPointerException:null","data": null }

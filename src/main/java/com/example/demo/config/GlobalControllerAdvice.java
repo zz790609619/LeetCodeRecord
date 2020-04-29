@@ -43,7 +43,7 @@ public class GlobalControllerAdvice {
     }
 
     /**
-     * 全局变量
+     * 全局变量  拦截器
      * @return
      */
     @ModelAttribute(name="ww")
