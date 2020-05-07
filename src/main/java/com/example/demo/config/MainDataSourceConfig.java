@@ -73,7 +73,6 @@ public class MainDataSourceConfig {
         druidDataSource.setUsername(userName);
         druidDataSource.setPassword(password);
         druidDataSource.setDriverClassName(driverClassName);
-
         druidDataSource.setInitialSize(initialSize);
         druidDataSource.setMaxActive(maxActive);
         druidDataSource.setMinIdle(minIdle);
@@ -85,8 +84,6 @@ public class MainDataSourceConfig {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-
         sourceBean.setXaDataSource(druidDataSource);
         sourceBean.setMaxPoolSize(maxActive);
         sourceBean.setUniqueResourceName("main0");
@@ -100,7 +97,6 @@ public class MainDataSourceConfig {
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
         sqlSessionFactoryBean.setMapperLocations(resolver
                 .getResources("classpath:mapper/*.xml"));
-
         sqlSessionFactoryBean.setPlugins(new Interceptor[]{new SqlMonitorInterceptor()});
         return sqlSessionFactoryBean.getObject();
     }
