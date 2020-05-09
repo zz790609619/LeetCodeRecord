@@ -49,6 +49,17 @@ aliyun:
         max_reconsume_times: 20
         access_key: cccccccccccccccccccccccccc
         secret_key: cccccccccccccccccccccccccc
+    oss:
+        endpoint: xx
+        accessKeyId: xx
+        accessKeySecret: xx
+        bucketName: xx
+        public:
+            url: xx
+        path: xx
 es:
     host: localhost
     port: 9200
+
+
+

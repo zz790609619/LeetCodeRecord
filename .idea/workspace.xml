@@ -5,10 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/demo_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/demo_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/config/MainDataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/config/MainDataSourceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-logs/tmlog23.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-logs/tmlog36.log" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,8 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/component/AlEsClientComponent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="43" column="52" lean-forward="true" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
+            <state relative-caret-position="988">
+              <caret line="82" column="24" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
               <folding>
                 <element signature="docComment;class#AlEsClientComponent#0" expanded="true" />
                 <element signature="docComment;method#save#0;class#AlEsClientComponent#0" expanded="true" />
@@ -55,20 +53,50 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.6.0/elasticsearch-7.6.0.jar!/org/elasticsearch/action/index/IndexRequest.class">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/FileUploadController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8115">
-              <caret line="559" selection-start-line="41" selection-end-line="559" />
+            <state>
+              <caret selection-end-line="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/component/OSSComponent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="28" column="7" lean-forward="true" selection-end-line="91" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;field#endpoint#0;class#OSSComponent#0" expanded="true" />
+                <element signature="docComment;method#uploadImages#0;class#OSSComponent#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/util/TransferFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;method#transMultipartFile#0;class#FileUtils#0;class#TransferFile#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/EsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="27" column="55" selection-end-line="78" />
+            <state relative-caret-position="362">
+              <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1186#1236#0" expanded="true" />
@@ -80,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/config/AlEsConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="380">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,8 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="51" selection-start-line="51" selection-end-line="54" />
+            <state relative-caret-position="285">
+              <caret line="60" column="19" lean-forward="true" selection-end-line="65" />
             </state>
           </provider>
         </entry>
@@ -101,8 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="105" column="21" lean-forward="true" selection-end-line="110" />
+            <state relative-caret-position="342">
+              <caret line="103" column="21" lean-forward="true" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -138,6 +166,8 @@
       <find>maven</find>
       <find>matchAllQuery</find>
       <find>matchPhraseQuery</find>
+      <find>PostMapping</find>
+      <find>file</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -146,9 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/example/demo/PalindromeNum.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/demo/EnableBrackets.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/demo/StringToInt.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/demo/PlusOne.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/demo/removeDuplicates.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/dao/BaseDao.java" />
@@ -192,11 +219,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/data/mapper/main/MakeUpBonusMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/entity/model/es/PageEs.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/controller/EsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/component/AlEsClientComponent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/config/AlEsConfig.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/util/TransferFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/component/OSSComponent.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/controller/FileUploadController.java" />
       </list>
     </option>
   </component>
@@ -220,22 +250,12 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
+    <option name="x" value="-1928" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -289,7 +309,20 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -451,6 +484,9 @@
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="demo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -526,7 +562,7 @@
       <workItem from="1587609056342" duration="7845000" />
       <workItem from="1587959619531" duration="40335000" />
       <workItem from="1588727779216" duration="18917000" />
-      <workItem from="1588815166542" duration="15933000" />
+      <workItem from="1588815166542" duration="23126000" />
     </task>
     <servers />
   </component>
@@ -563,7 +599,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="272617000" />
+    <option name="totallyTimeSpent" value="279810000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -575,7 +611,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49921012" visible="true" weight="0.23745997" />
       <window_info id="Structure" order="1" weight="0.2497332" />
@@ -587,7 +624,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292978" />
-      <window_info active="true" anchor="bottom" id="Debug" order="2" sideWeight="0.49946696" visible="true" weight="0.4956427" />
+      <window_info active="true" anchor="bottom" id="Debug" order="2" sideWeight="0.49946696" visible="true" weight="0.49782136" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" sideWeight="0.4994664" weight="0.32897604" />
@@ -717,6 +754,18 @@
           <properties />
           <option name="timeStamp" value="135" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/FileUploadController.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/util/TransferFile.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -736,6 +785,11 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>multipartFile.getName()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>(shardingValue.getValue() / 30)%4</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -753,87 +807,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.0/mybatis-3.5.0.jar!/org/apache/ibatis/session/SqlSessionFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_102/src.zip!/java/util/function/BiFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.0/mybatis-3.5.0.jar!/org/apache/ibatis/session/Configuration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="139" column="5" lean-forward="true" selection-start-line="139" selection-start-column="5" selection-end-line="139" selection-end-column="5" />
-          <folding>
-            <element signature="e#22689#22690#0" expanded="true" />
-            <element signature="e#22742#22743#0" expanded="true" />
-            <element signature="e#31277#34072#0" />
-            <element signature="e#31864#31865#0" expanded="true" />
-            <element signature="e#31904#31905#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.9.RELEASE/spring-webmvc-5.1.9.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="510" selection-start-line="510" selection-end-line="510" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.9.RELEASE/spring-webmvc-5.1.9.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="519" lean-forward="true" selection-start-line="519" selection-end-line="519" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/cachetest/CacheQ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/cachetest/ConfigerCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding>
-            <element signature="e#212#213#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/cachetest/FilterCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.0/mybatis-3.5.0.jar!/org/apache/ibatis/cache/decorators/BlockingCache.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-630">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.0/mybatis-3.5.0.jar!/org/apache/ibatis/cache/Cache.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -983,13 +956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/util/AesUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.m2/settings.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1074,34 +1040,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.6.0/elasticsearch-7.6.0.jar!/org/elasticsearch/index/query/QueryBuilders.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="118" column="31" lean-forward="true" selection-start-line="118" selection-start-column="31" selection-end-line="118" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.6.0/elasticsearch-7.6.0.jar!/org/elasticsearch/action/index/IndexRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8115">
-          <caret line="559" selection-start-line="41" selection-end-line="559" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="105" column="21" lean-forward="true" selection-end-line="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="51" selection-start-line="51" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/entity/SubmitUserPayOrderRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -1116,10 +1054,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.6.0/elasticsearch-7.6.0.jar!/org/elasticsearch/index/query/QueryBuilders.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1698">
+          <caret line="245" column="73" selection-start-line="245" selection-start-column="67" selection-end-line="245" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/client/elasticsearch-rest-client/7.6.0/elasticsearch-rest-client-7.6.0.jar!/org/elasticsearch/client/RequestOptions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch-x-content/7.6.0/elasticsearch-x-content-7.6.0.jar!/org/elasticsearch/common/xcontent/XContentType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE.jar!/org/springframework/web/bind/annotation/PostMapping.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/component/AlEsClientComponent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="43" column="52" lean-forward="true" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
+        <state relative-caret-position="988">
+          <caret line="82" column="24" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
           <folding>
             <element signature="docComment;class#AlEsClientComponent#0" expanded="true" />
             <element signature="docComment;method#save#0;class#AlEsClientComponent#0" expanded="true" />
@@ -1137,10 +1103,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/util/AesUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.22/tomcat-embed-core-9.0.22.jar!/org/apache/tomcat/util/http/fileupload/FileUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2387">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.6.0/elasticsearch-7.6.0.jar!/org/elasticsearch/action/index/IndexRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8115">
+          <caret line="559" selection-start-line="41" selection-end-line="559" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE.jar!/org/springframework/web/multipart/MultipartFile.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/config/AlEsConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="380">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1149,11 +1150,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/EsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="27" column="55" selection-end-line="78" />
+        <state relative-caret-position="362">
+          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1186#1236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_102/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="1910" lean-forward="true" selection-start-line="1910" selection-end-line="1910" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/util/TransferFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#transMultipartFile#0;class#FileUtils#0;class#TransferFile#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/component/OSSComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="28" column="7" lean-forward="true" selection-end-line="91" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;field#endpoint#0;class#OSSComponent#0" expanded="true" />
+            <element signature="docComment;method#uploadImages#0;class#OSSComponent#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="103" column="21" lean-forward="true" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="60" column="19" lean-forward="true" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/FileUploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
