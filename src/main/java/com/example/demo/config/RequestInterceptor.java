@@ -2,7 +2,10 @@ package com.example.demo.config;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.example.demo.data.mapper.main.UserMapper;
+import com.example.demo.entity.User;
 import com.example.demo.entity.model.ResponseDto;
+import com.example.demo.util.ApplicationContextUtil;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -32,8 +35,11 @@ public class RequestInterceptor implements HandlerInterceptor {
             if("111".equals(map.get("token"))){
                 //token正确 继续下一步拦截器(如果有)
                 System.out.println("token is right");
+                UserMapper userMapper= ApplicationContextUtil.getBean(UserMapper.class);
+                User user=userMapper.getUserByToken(String.valueOf(map.get("token")));
+                httpServletRequest.setAttribute("test",JSON.toJSONString(user));
                 return true;
-            }else{
+            }else
                 //token错误 返回错误response
                 System.out.println("token is error");
                 PrintWriter writer = null;
@@ -55,8 +61,6 @@ public class RequestInterceptor implements HandlerInterceptor {
                     return false;
                 }
             }
-
-        }
 
         /**
          * 后处理回调方法，实现处理器的后处理（但在渲染视图之前），此时我们可以通过modelAndView（模型和视图对象）对模型数据进行处理或对视图进行处理，modelAndView也可能为null。

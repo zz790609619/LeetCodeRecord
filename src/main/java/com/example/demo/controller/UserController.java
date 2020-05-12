@@ -9,10 +9,9 @@ import com.example.demo.mq.AliMqComponent;
 import com.example.demo.service.MakeUpBonusService;
 import com.example.demo.service.UserPayOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletRequest;
 
 @RestController
 public class UserController{
@@ -51,4 +50,15 @@ public class UserController{
         makeUpBonusService.insertMakeUpBonus(makeUpBonus);
     }
 
+    /**
+     * 测试拦截器中token校验后放入用户信息，接口是否能够从request获取到用户信息
+     * @param request
+     * @param token
+     */
+    @GetMapping("/queryUser")
+    public void queryUser(HttpServletRequest request,@RequestParam("token") String token){
+        //在拦截器中验证token并获取到这个token对应的信息
+        System.out.println(request.getAttribute("test"));
+        System.out.println(token);
+    }
 }

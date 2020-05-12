@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
 @RestController
@@ -24,6 +25,7 @@ public class UserNodeController {
      */
     @RequestMapping(value = "/exception")
     public String getException(){
+
         int[] arr = {1, 2, 3};
         System.out.println(arr[4]);
         ResponseDto dto=new ResponseDto();
@@ -37,7 +39,8 @@ public class UserNodeController {
      * 返回结果：{"errorCode": 1002,"message": "NullPointerException:null","data": null }
      */
     @RequestMapping(value = "/nullPointException")
-    public ResponseDto getNullPointException(){
+    public ResponseDto getNullPointException(HttpServletRequest request){
+
         Object obj = null;
         obj.toString();
         ResponseDto dto=new ResponseDto();

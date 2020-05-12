@@ -24,7 +24,7 @@ public class WebRequestInterceptor implements WebMvcConfigurer {
      * @param registry
      */
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new RequestInterceptor()).addPathPatterns("/test/**")
+        registry.addInterceptor(new RequestInterceptor()).addPathPatterns("/test/**").addPathPatterns("/queryUser")
                 .excludePathPatterns("/test/exception");
     }
 
