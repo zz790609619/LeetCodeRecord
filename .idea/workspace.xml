@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d770fcb-187b-4cc7-9c5d-1433ccefe07a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/demo_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/demo_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/config/RequestInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/config/RequestInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/config/WebRequestInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/config/WebRequestInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/UserNodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/UserNodeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-logs/tmlog39.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/config/mq/AliMqConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/config/mq/AliMqConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction-logs/tmlog45.log" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,11 +31,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="10" column="14" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="21" />
+            <state relative-caret-position="266">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/config/mq/AliMqConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="56" column="33" lean-forward="true" selection-end-line="277" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;field#namesrvAddr#0;class#AliMqConfig#0" expanded="true" />
+                <element signature="docComment;field#groupId#0;class#AliMqConfig#0" expanded="true" />
+                <element signature="docComment;field#groupId#0;class#AliMqConfig#0" expanded="true" />
+                <element signature="docComment;field#httpGroupId#0;class#AliMqConfig#0" expanded="true" />
+                <element signature="e#2670#2725#0" expanded="true" />
+                <element signature="docComment;method#getCommonProducer#0;class#AliMqConfig#0" expanded="true" />
+                <element signature="docComment;method#getCommonConsumer#0;class#AliMqConfig#0" expanded="true" />
+                <element signature="docComment;method#getCommonConsumer#1;class#AliMqConfig#0" expanded="true" />
+                <element signature="e#6619#6650#0" expanded="true" />
+                <element signature="docComment;method#sendCxtOrder#0;class#AliMqConfig#0" expanded="true" />
+                <element signature="docComment;method#getCxUserSynchronizeUserPlatform#0;class#AliMqConfig#0" expanded="true" />
+                <element signature="e#6754#6762#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="55" column="105" selection-start-line="55" selection-start-column="105" selection-end-line="55" selection-end-column="105" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/mq/rece/MqMessageListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+              <folding>
+                <element signature="e#650#651#0" expanded="true" />
+                <element signature="e#700#701#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="81" column="8" lean-forward="true" selection-start-line="81" selection-start-column="8" selection-end-line="85" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -82,7 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/config/plugin/UserPayOrderSqlInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/config/plugin/SqlMonitorInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/data/mapper/UserPayOrderMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/UserPayOrderMapper.xml" />
@@ -99,8 +152,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/config/mq/s.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/config/mq/ss.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/mq/AliMqComponent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/config/mq/AliMqConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/mq/rece/MqMessageListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/config/ControllerAdvice.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/config/GlobaControllerAdvice.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/entity/ResponseDto.java" />
@@ -119,10 +170,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/controller/EsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/component/AlEsClientComponent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/config/AlEsConfig.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/util/TransferFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/component/OSSComponent.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/controller/FileUploadController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/util/SpringContextUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/util/ApplicationContextUtil.java" />
@@ -133,6 +182,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/controller/UserNodeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/config/RequestInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/mq/rece/MqMessageSpringListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/mq/rece/MqMessageListener.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/config/mq/AliMqConfig.java" />
       </list>
     </option>
   </component>
@@ -161,7 +215,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -175,6 +229,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -233,7 +289,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
@@ -242,7 +298,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="mq" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
@@ -251,8 +308,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="mq" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
@@ -261,16 +317,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="mq" type="462c0819:PsiDirectoryNode" />
+              <item name="rece" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
@@ -306,8 +354,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -327,20 +373,20 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.example.demo.controller" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.demo.entity" />
-      <recent name="com.example.demo.data.mapper.main" />
-      <recent name="com.example.demo.entity.model.es" />
-      <recent name="com.example.demo.component" />
-      <recent name="com.example.demo.cachetest" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\ww\test\leetcode\src\main\java\com\example\demo\config" />
       <recent name="D:\ww\test\leetcode\src\main\resources" />
       <recent name="E:\brt\demo\src\main\resources\templates" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.demo.mq.rece" />
+      <recent name="com.example.demo.entity" />
+      <recent name="com.example.demo.data.mapper.main" />
+      <recent name="com.example.demo.entity.model.es" />
+      <recent name="com.example.demo.component" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.demo.controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -540,7 +586,8 @@
       <workItem from="1587609056342" duration="7845000" />
       <workItem from="1587959619531" duration="40335000" />
       <workItem from="1588727779216" duration="18917000" />
-      <workItem from="1588815166542" duration="29450000" />
+      <workItem from="1588815166542" duration="30047000" />
+      <workItem from="1589361036777" duration="1749000" />
     </task>
     <servers />
   </component>
@@ -577,7 +624,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="286134000" />
+    <option name="totallyTimeSpent" value="288480000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -589,10 +636,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49921012" visible="true" weight="0.23745997" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49921012" visible="true" weight="0.17716116" />
       <window_info id="Structure" order="1" weight="0.2497332" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -606,7 +653,7 @@
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" sideWeight="0.4994664" weight="0.32897604" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.6416122" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.46296296" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50053364" side_tool="true" weight="0.32897604" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" sideWeight="0.4994664" weight="0.32897604" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4994664" weight="0.32897604" />
@@ -626,7 +673,7 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Bean Validation" order="10" weight="0.32995737" />
-      <window_info anchor="right" id="Maven" order="11" visible="true" weight="0.1995731" />
+      <window_info anchor="right" id="Maven" order="11" visible="true" weight="0.14674494" />
       <window_info anchor="right" id="Coverage" order="12" side_tool="true" weight="0.32995737" />
     </layout>
   </component>
@@ -738,12 +785,6 @@
           <properties />
           <option name="timeStamp" value="152" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java</url>
-          <line>14</line>
-          <properties />
-          <option name="timeStamp" value="153" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -785,34 +826,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/transaction-logs/tmlog40.log" />
-    <entry file="file://$PROJECT_DIR$/hs_err_pid17000.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5942" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/replay_pid8680.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.11/httpcore-4.4.11.jar!/org/apache/http/HttpHost.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="37" column="27" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="27" />
-          <folding>
-            <element signature="e#1299#1300#0" expanded="true" />
-            <element signature="e#1357#1358#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore-nio/4.4.11/httpcore-nio-4.4.11.jar!/org/apache/http/nio/protocol/HttpAsyncRequestExecutor.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1004,20 +1017,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="103" column="21" lean-forward="true" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="60" column="19" lean-forward="true" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/FileUploadController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
@@ -1179,10 +1178,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/mq/AliMqComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/openservices/ons-client/1.8.4.Final/ons-client-1.8.4.Final-sources.jar!/com/aliyun/openservices/shade/com/alibaba/rocketmq/client/consumer/MQConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/mq/rece/MqMessageSpringListener.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="21" />
+          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="55" column="105" selection-start-line="55" selection-start-column="105" selection-end-line="55" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="81" column="8" lean-forward="true" selection-start-line="81" selection-start-column="8" selection-end-line="85" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/config/mq/AliMqConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="56" column="33" lean-forward="true" selection-end-line="277" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;field#namesrvAddr#0;class#AliMqConfig#0" expanded="true" />
+            <element signature="docComment;field#groupId#0;class#AliMqConfig#0" expanded="true" />
+            <element signature="docComment;field#groupId#0;class#AliMqConfig#0" expanded="true" />
+            <element signature="docComment;field#httpGroupId#0;class#AliMqConfig#0" expanded="true" />
+            <element signature="e#2670#2725#0" expanded="true" />
+            <element signature="docComment;method#getCommonProducer#0;class#AliMqConfig#0" expanded="true" />
+            <element signature="docComment;method#getCommonConsumer#0;class#AliMqConfig#0" expanded="true" />
+            <element signature="docComment;method#getCommonConsumer#1;class#AliMqConfig#0" expanded="true" />
+            <element signature="e#6619#6650#0" expanded="true" />
+            <element signature="docComment;method#sendCxtOrder#0;class#AliMqConfig#0" expanded="true" />
+            <element signature="docComment;method#getCxUserSynchronizeUserPlatform#0;class#AliMqConfig#0" expanded="true" />
+            <element signature="e#6754#6762#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/mq/rece/MqMessageListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding>
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -79,6 +79,11 @@
 			<artifactId>ons-client</artifactId>
 			<version>1.8.4.Final</version>
 		</dependency>
+		<dependency>
+			<groupId>com.aliyun.mq</groupId>
+			<artifactId>mq-http-sdk</artifactId>
+			<version>1.0.1</version>
+		</dependency>
 		<!-- elasticsearch java封装jar包 -->
 		<dependency>
 			<groupId>org.elasticsearch.client</groupId>

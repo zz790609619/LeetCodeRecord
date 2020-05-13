@@ -49,6 +49,14 @@ aliyun:
         max_reconsume_times: 20
         access_key: cccccccccccccccccccccccccc
         secret_key: cccccccccccccccccccccccccc
+        http:
+            instanceId: xx
+            access_key: xx
+            secret_key: xx
+            http_addr: http://cccccccccccccccccccccccccccc.mq-internet-access.mq-internet.aliyuncs.com:80
+            group_id: GID_TCP_001
+            topic: ww_test_topic
+            tag: ww_test_tag
     oss:
         endpoint: xx
         accessKeyId: xx
@@ -57,6 +65,7 @@ aliyun:
         public:
             url: xx
         path: xx
+
 es:
     host: localhost
     port: 9200
