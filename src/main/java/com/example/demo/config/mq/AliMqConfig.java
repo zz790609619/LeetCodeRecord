@@ -203,6 +203,7 @@ public class AliMqConfig {
     /**
      * Http消费mq消息
      * //@Bean(initMethod = "start", destroyMethod = "shutdown")注释是因为没有消息 所以会一直报错
+     * 会阻塞主线程 所以需要另开一个线程(NewThreadHttpMqConsumer)
      * @param
      * @return
      */
