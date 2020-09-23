@@ -31,8 +31,9 @@ public class MakeUpBonus {
         return orderId;
     }
 
-    public void setOrderId(String orderId) {
+    public MakeUpBonus setOrderId(String orderId) {
         this.orderId = orderId;
+        return this;
     }
 
     public Long getUserId() {

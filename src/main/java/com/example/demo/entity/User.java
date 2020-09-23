@@ -16,6 +16,12 @@ public class User {
      */
     private String token;
 
+    public User(String userName, Integer userId, String token) {
+        this.userName = userName;
+        this.userId = userId;
+        this.token = token;
+    }
+
     public String getUserName() {
         return userName;
     }

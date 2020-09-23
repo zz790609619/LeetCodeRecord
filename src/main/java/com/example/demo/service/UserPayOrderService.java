@@ -1,5 +1,6 @@
 package com.example.demo.service;
 
+import com.aliyun.openservices.shade.com.alibaba.fastjson.JSON;
 import com.example.demo.data.mapper.user.UserPayOrderMapper;
 import com.example.demo.entity.SubmitUserPayOrderRequest;
 import com.example.demo.entity.UserPayOrder;
@@ -27,10 +28,10 @@ public class UserPayOrderService {
      * @param userOrderId
      * @return
      */
-    public UserPayOrder userOrderMerchantId(String userOrderId) {
+    public String userOrderMerchantId(String userOrderId) {
         UserPayOrder upo = userPayOrderDao.selectByEntity(new UserPayOrder()
             .setId(userOrderId));
-        return upo;
+        return JSON.toJSONString(upo);
     }
 
 

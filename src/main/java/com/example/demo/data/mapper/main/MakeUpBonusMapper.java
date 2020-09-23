@@ -17,4 +17,7 @@ public interface MakeUpBonusMapper {
 
 	@Select("select * from make_up_bonus")
 	List<MakeUpBonus> ss();
+
+	@Select("select * from make_up_bonus where orderId=#{orderId}")
+	MakeUpBonus sss(MakeUpBonus mub);
 }

@@ -1,5 +1,8 @@
 package com.example.demo.entity.model;
 
+import org.springframework.stereotype.Repository;
+
+@Repository
 public class ResponseDto {
     private int errorCode;
     private String message;
